@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>My test page</title>
+  </head>
+  <body>
+	  {% if teachers_list %}
+	    <ul>
+		  {% for teacher in teachers_list %} 
+		  <li>{{teacher.name_text}}</li>
+		  {% endfor %}  
+	    </ul>
+	  {% else %}
+	  <p>no teachers</p>
+	  {% endif %}
+  </body>
+</html>

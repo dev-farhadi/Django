@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>My test page</title>
+  </head>
+  <body>
+         {% if courses_list %}
+	    <ul>
+               {% for course in courses_list %}
+	         <li>{{course.name_text}}</li>
+	       {% endfor %}
+	    </ul>
+	 {% else %}
+	       <p>no courses available.</p>
+	 {% endif %}     
+  </body>
+</html>
+
