@@ -76,14 +76,13 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'db_django',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': '127.0.0.1',
-        'OPTIONS': {
-            'unix_socket': '/opt/lampp/var/mysql/mysql.sock',
-        },
+        'ENGINE': 'mysql.connector.django',
+        'NAME': 'alifarhadi',
+        'USER': 'user',
+        'PASSWORD': 'password123',
+        'HOST': 'data',
+        'PORT': '3306'
+        
     }
 }
 
